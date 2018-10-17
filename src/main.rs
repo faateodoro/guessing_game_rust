@@ -14,7 +14,10 @@ fn main() {
     // io::stdin() é uma função padrão de entrada de dados
     // .read_line(&mut guess) entrada de dados com o teclado
     // que passa o valor como referencia para guess.
-    // 
+    // .expect("") é continuação da mesma linha, mas foi quebrada para
+    // uma melhor visualização. 
+    // .expect("") recebe um Ok ou um Err ou está tudo certo,
+    // ou o programa dá um crash (Panic).
     io::stdin().read_line(&mut guess)
         .expect("Failed to read line.");
 
