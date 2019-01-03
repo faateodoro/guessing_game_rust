@@ -42,10 +42,10 @@ fn main() {
 
         // faz a comparação entre números
         match guess.cmp(&secret_number) {
-            Ordering::Less => println!("Too small!"),
-            Ordering::Greater => println!("Too big"),
+            Ordering::Less => println!("Numero abaixo do esperado!"),
+            Ordering::Greater => println!("Numero acima do esperado!"),
             Ordering::Equal => {
-                println!("You win!");
+                println!("Acertou Mizeravi!");
                 // para o loop
                 break;
             }
